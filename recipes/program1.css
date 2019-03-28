@@ -1,0 +1,62 @@
+
+
+ul.nav{
+    list-style-type: none;
+}
+ul.nav li{
+    display: inline-block;
+    background-color: #A4A400;
+    padding: .2em .5em;
+}
+
+body{
+    background-color: #FFCC00;
+    color: #000;
+}
+
+table{
+    background-color: #CC9933;
+    color: #fff;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+
+table, 
+th,
+td {
+    border-color: #fff;
+}
+
+th{
+    background-color: #003366;
+}
+th,
+td{
+    border: solid 2px white;
+    padding: 5px;
+}
+h1,
+h2,
+caption{
+    background-color: #F0F0F0;
+    color: #A4A400;
+}
+h1, 
+h2{ 
+    text-align: center;
+}
+caption{
+    font-weight: bold;
+}
+
+.bold{
+    font-weight: bold;
+}
+.wide{
+    letter-spacing: 5px;
+}
+
+.bg{
+    background-image: url("bg.jpg");
+    background-blend-mode: screen;
+}

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkers</title>
+    <style>
+        #board{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            width:640px;
+            height:640px;
+            background-repeat: no-repeat;
+            background-image: 
+                linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                linear-gradient(to right, rgba(0,0,0,.4), rgba(0,0,0,.4)),
+                linear-gradient(to right, red, red),
+                linear-gradient(to right, blue, blue),
+                linear-gradient(to right, green, green),
+                linear-gradient(to right, orange, orange);
+            background-position:
+                 top left,
+                 top right,
+                 bottom left,
+                 bottom right;
+            background-size: 
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%;
+            animation-name: flashred, flashblue;
+            animation-duration: 1s, 1s;
+            animation-timing-function: step-start, step-start;
+            animation-delay: 2s, 0;
+            
+        }
+        @keyframes flashred{
+            from{
+                background-size: 
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%;
+            }
+            to{
+                background-size: 
+                0 0,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%;
+
+            }
+        }
+        @keyframes flashblue{
+            from{
+                background-size: 
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%;
+            }
+            to{
+                background-size: 
+                50% 50%,
+                0 0,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%,
+                50% 50%;
+
+            }
+        }
+            
+        /*  
+        .red{
+            background-color: red;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .green{
+            background-color: green;
+        }
+        .yellow{
+            background-color: yellow;
+        }
+        */
+        
+    </style>
+</head>
+<body>
+<div id="board">
+    <div class="red"></div>
+    <div class="blue"></div>
+    <div class="green"></div>
+    <div class="yellow"></div>
+</div>
+</body>
+</html>

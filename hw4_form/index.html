@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+
+        <link rel="stylesheet" href="styles.css" type="text/css"/>
+        <title>Homework 4</title>
+    </head>
+    <body>
+        
+        <h1>Text Styler 3000</h1>
+        <form action="submit.php" method="POST">
+            <div id="usertextContainer">
+            <label for="usertext">Enter some text</label></br>   
+            <textarea id="usertext" name="usertext" rows="5" cols="33">Your text
+            </textarea>
+            </div>
+            
+            <fieldset id="fontFieldset" >
+                <legend>Choose a font</legend>
+                <ul class="fonts">
+                    <li>
+                        <input checked id="arial" value="arial" type="radio" name="font"/>
+                        <label for="arial" class="arial">Arial</label>
+                    </li>
+                    <li>
+                        <input id="timesnewroman" value="timesnewroman" type="radio" name="font"/>
+                        <label for="timesnewroman" class="timesnewroman">Times New Roman</label>
+                    </li>
+                    <li>
+                        <input id="georgia" value="georgia" type="radio" name="font"/>
+                        <label for="georgia" class="georgia">Georgia</label>
+                    </li>
+                    <li>
+                        <input id="courier" value="courier" type="radio" name="font"/>
+                        <label for="courier" class="courier">Courier</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <div id="sizeContainer"><label for="fontSize">Font Size</label>
+                <input type="number" name="fontSize" id="fontSize" min="4" max="100" step="1" value="20"></div>
+            <fieldset id="stylesFieldset">
+            <legend>Text Styles</legend>
+            
+           
+            <ul class="styles">
+
+                <li>
+                    <input type="checkbox" id="bold" name="isBold"/>
+                    <label class="b" for="bold">Bold</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="italic" name="isItalic"/>
+                    <label class="i" for="italic">Italic</label>
+                </li>
+                <li>
+                    <input type="checkbox" id="underline" name="isUnderline"/>
+                    <label class="u" for="underline" id="underline">Underline</label>
+                </li>
+            </ul>
+            </fieldset>
+
+            
+            
+            <div id="buttonContainer">
+            <button type="submit">Submit</button>
+            <button type="reset">Reset</button>
+            </div>
+            
+
+        </form>
+
+    </body>
+</html>

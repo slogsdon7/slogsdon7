@@ -1,0 +1,51 @@
+div#board{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    border: 3px solid black;
+    width: 640px;
+    height: 640px;
+}
+
+.white-bg{
+    background-color: white;
+}
+
+.green-bg{
+    background-color:green;
+}
+
+
+div#board>:nth-child(even):nth-child(-n+8),
+div#board>:nth-child(n+8):nth-child(odd):nth-child(-n+16),
+div#board>:nth-child(n+17):nth-child(even):nth-child(-n+24),
+div#board>:nth-child(n+24):nth-child(odd):nth-child(-n+32),
+div#board>:nth-child(n+33):nth-child(even):nth-child(-n+40),
+div#board>:nth-child(n+40):nth-child(odd):nth-child(-n+48),
+div#board>:nth-child(n+49):nth-child(even):nth-child(-n+56),
+div#board>:nth-child(n+56):nth-child(odd):nth-child(-n+64)
+{
+    background-color:darkgreen;
+    position: relative;
+}
+
+
+.piece{
+    border-radius: 50%;
+    height: 60px;
+    width: 60px;
+    position:absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
+    margin: auto;
+}
+.piece>a{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+.red{
+    background: rgb(209, 0, 0);
+}
+.black{
+    background: black;
+}
